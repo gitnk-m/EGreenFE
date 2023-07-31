@@ -1,0 +1,197 @@
+.mobNav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2% 5%;
+    z-index: 6;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.mobLogo{
+    width: 50%;
+    height: 100px;
+}
+.mobLogo img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: left;
+}
+.menuIcon{
+    width: 10%;
+    cursor: pointer;
+}
+.mobMenu{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    /* padding: 20% 15%; */
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: var(--background);
+    z-index: 5;
+    transition: .5s ease;
+}
+.mobMenuList{
+    padding: 35% 15%;
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+}
+.mobmenuactive{
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+}
+.mobmenunotactive{
+    opacity: 0;
+    visibility: hidden;
+    height: 0;
+}
+.mobMenuItem{
+    text-decoration: none;
+    font-family: var(--menuFont);
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 5%;
+    color: var(--text);
+    text-transform: uppercase;
+}
+.mobSubmenuclick{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    cursor: pointer;
+}
+.servicemenuArrow, .productmenuArrow{
+    width: 8%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .5s ease;
+}
+.servicemenuArrow img, .productmenuArrow img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.mobdropItems{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    background-color: #fff;
+
+    position: relative;
+    left: 25%;
+    z-index: 4;
+    display: none;
+}
+.mobsubmenuitem{
+    text-align: right;
+    width: 100%;
+    padding-right: 5rem;
+
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--text);
+    margin-bottom: 2%;
+}
+.subactive{
+    display: flex;
+    opacity: 1;
+    height: auto;
+    z-index: 6;
+    
+}
+.subnotactive{
+    opacity: 0;
+    height: 0;
+    z-index: 5;
+    display: none;
+}
+.servicearrowreverse, .productarrowreverse{
+    transform: rotate(180deg);
+}
+.servicearrownormal, .productarrownormal{
+    transform: rotate(0deg);
+}
+.mobBrochure{
+    /* position: absolute;
+    right: 5%; */
+    font-size: 1.5rem;
+    font-family: var(--brobtnFont);
+    font-weight: var(--brobtnWeight);
+    background-color: var(--btnbgGreen);
+    color: var(--btnText);
+    padding: .5rem 1rem;
+    border-radius: 2.5rem;
+    margin-bottom: 25%;
+}
+
+.mobBrochure a{
+    text-decoration: none;
+    color: var(--background);
+}
+.nowin{
+    border-bottom: solid #00A450;
+}
+.subin{
+    text-decoration: underline #00A450;
+}
+.navColor{
+    background-color: #f4f4f4;
+}
+@media only screen and (max-width: 1070px) and (min-aspect-ratio:1/1){
+    .mobMenu{
+        flex-direction: row-reverse;
+        padding: 0 10%;
+    }
+    .mobMenuList{
+        padding: 0% 5%;
+        width: 50%;
+        height: 100%;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 5%;
+    }
+    .mobMenuItem{
+        font-size: 1rem;
+        margin-bottom: 5%;
+        justify-items: center;
+    }
+    .mobSubmenuclick{
+        width: 100%;
+        display: flex;
+        justify-content:flex-end;
+        align-items: flex-start;
+        cursor: pointer;
+    }
+    .servicemenuArrow, .productmenuArrow{
+        height: 100%;
+        margin-right: 10%;
+    }
+    .servicemenuArrow img, .productmenuArrow img{
+        height: 50%;
+        width: 40%;
+        object-position: top;
+    }
+    .mobBrochure{
+        margin-bottom: -10%;
+    }
+}

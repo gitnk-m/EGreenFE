@@ -1,0 +1,201 @@
+.footer{
+    /* background-color: midnightblue; */
+    border-top: 2px solid black;
+
+    width: 100vw;
+    height: 50vh;
+    padding: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerDetails{
+    /* background-color: antiquewhite; */
+
+    height: 100%;
+    width: 30%;
+    min-width: 300px;
+    border-right: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerLogo{
+    margin: 0;
+}
+
+.footerMenuMain{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    border-right: 2px solid black;
+    margin-left: 5%;
+}
+.footermenuTitle h1{
+    font-family: var(--h3Font);
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight);
+}
+.footermenulinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
+}
+.footerMenuMain .MenuItem{
+    font-size: 1.5rem;
+}
+.footerAbout{
+    /* background-color: antiquewhite; */
+
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-left: 1.5rem;
+    /* border-right: 2px solid black; */
+}
+
+.footerAddress{
+    padding-left: 1.5rem;
+}
+.footerAddress .menuAddress{
+    /* padding-bottom: .5rem; */
+    margin-top: 1.5rem;
+}
+.footerAddress .menuAddress h3{
+    display: inline;
+    margin: 0;
+    margin-bottom: 2%;
+    font-family: var(--h3Font);
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight);
+}
+.footerAddress .menuAddress p{
+    font-family: var(--p1Font);
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight);
+    color: var(--text);
+    margin-top: 3%;
+}
+.footerAddress .menuDigital h3{
+    display: inline;
+    margin: 0;
+    margin-bottom: 2%;
+    font-family: var(--h3Font);
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight);
+}
+.footerAddress .menuDigital p{
+    font-family: var(--p1Font);
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight);
+    color: var(--text);
+    margin-top: 3%;
+}
+.footertxt{
+    width: 80%;
+}
+.footertxt h3{
+    font-family: var(--h3Font);
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight);
+    margin: 0;
+    margin-bottom: 5%;
+}
+.footertxt p{
+    font-family: var(--p1Font);
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight);
+    color: var(--text);
+
+}
+.follow{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.follow h3{
+    font-family: var(--h3Font);
+    font-size: var(--h3Size);
+    font-weight: var(--h3Weight);
+    margin: 0;
+    margin-bottom: 2%;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.icon{
+    margin: 3%;
+    margin-top: 0;
+    width: 100%;
+    height: 100%;
+}
+.icon img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+.footermenu{
+    font-family: var(--p1Font);
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight);
+    color: var(--text);
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1070px){
+    .footer{
+        height: auto;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footerDetails{
+        border-right: none;
+        margin-bottom: 20%;
+    }
+    .footerMenuMain{
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        border-right: none;
+        margin-left: 2rem;
+        margin-bottom: 20%;
+    }
+    .footerAbout{    
+        height: auto;
+        width: 100%;
+        padding-left: 0;
+        margin-left: 2rem;
+    }
+    .footermenuTitle h1{
+        margin-bottom: 30%;
+    }
+    .footermenulinks{
+        margin-left:.5rem;
+    }
+    .footertxt p{
+        margin-left: .5rem;
+    }
+    .follow h3{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+    .icon{
+        margin-left: 0;
+    }
+}

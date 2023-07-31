@@ -1,0 +1,159 @@
+.navbarweb{
+    width: 100vw;
+    height: 100px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+
+    /* background-color: #fff; */
+}
+.navColor{
+    background-color: #f4f4f4;
+}
+
+.Logo{
+    width: 282px;
+    height: 94px;
+    flex-shrink: 0;
+
+    position: absolute;
+    left: 0;
+    /* margin-left: 10%; */
+    margin: 10%;
+    margin-left: 5%;
+}
+
+.menuItems{
+    margin-right: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40%;
+
+    position: absolute;
+    right: 10%;
+}
+
+.MenuItem{
+    color: #000;
+    leading-trim: both;
+    text-edge: cap;
+
+    /* navbar */
+    font-size: var(--menuSize);
+    font-family: var(--menuFont);
+    font-weight: var(--menuWeight);
+    text-decoration: None;
+}
+
+.menuactive{
+    /* text-decoration: underline #00A450; */
+    border-bottom: solid #00A450;
+}
+
+.brochure{
+    position: absolute;
+    right: 5%;
+    font-size: var(--brobtnSize);
+    font-family: var(--brobtnFont);
+    font-weight: var(--brobtnWeight);
+    background-color: var(--btnbgGreen);
+    color: var(--btnText);
+    padding: .5rem 1rem;
+    border-radius: 2.5rem;
+}
+.brochure a{
+    text-decoration: none;
+    color: var(--background);
+}
+
+.dropmenu{
+    width: 122px;
+    position: fixed;
+    /* top: 95px; */
+    /* top:80px; */
+    left:61%;
+    z-index: 5;
+    transition: .4s ease;
+    background-color: var(--background);
+    box-shadow: 3px 3px 5px .5px var(--text);
+}
+
+.dropmenuProd{
+    width: 125px;
+    position: fixed;
+    /* top: 95px; */
+    /* top:80px; */
+    left:52%;
+    z-index: 5;
+    transition: .4s ease;
+    background-color: var(--background);
+    box-shadow: 3px 3px 5px .5px var(--text);
+}
+
+.dropItems{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 2%;
+
+    width: 100%;
+    
+}
+.dropItems a{
+    /* margin-top: 5%; */
+    /* padding:5%; */
+    color: var(--text);
+
+    /* border-bottom: 2px solid var(--formline); */
+}
+.dropItems a:hover{
+    background-color: var(--formline);
+}
+
+
+#safetymenu, #securitymenu{
+    width: 120px;
+    padding: 5%;
+    padding-top: 8%;
+    margin-bottom: 2%;
+
+    font-family: var(--menuFont);
+    font-size: var(--menuSizeSub);
+    font-weight: var(--menuWeightSub);
+}
+
+#safetyProd, #securityProd{
+    width: 120px;
+    /* background-color: #00A450; */
+    padding: 5%;
+    padding-top: 8%;
+    margin-bottom: 2%;
+
+    font-family: var(--menuFont);
+    font-size: var(--menuSizeSub);
+    font-weight: var(--menuWeightSub);
+}
+
+.hidden{
+    /* opacity: 0; */
+    pointer-events: none;
+    height: 0;
+    
+    display: none;
+    
+}
+
+.visible{
+    /* opacity: 1; */
+    pointer-events: auto;
+    top: 60px;
+    /* height: auto; */
+    display: block;
+}

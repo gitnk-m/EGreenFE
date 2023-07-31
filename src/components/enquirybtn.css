@@ -1,0 +1,29 @@
+.enqBtn{
+    color: var(--btnText);
+    font-size: var(--btnSize);
+    font-family: var(--btnFont);
+    font-weight: var(--btnWeight);
+    text-decoration: none;
+    padding: .5rem 1.5rem;
+    /* z-index: 99; */
+}
+
+.enqBtnContainer{
+    /* background-color: var(--btnbgGreen); */
+    border-radius: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.enqBtnContainer img{
+    padding-left: 1.5rem;
+}
+
+.enbtred{
+    background-color: var(--logoRed);
+}
+.enbtgrn{
+    background-color: var(--logoGreen);
+}

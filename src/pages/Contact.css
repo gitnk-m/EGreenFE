@@ -1,0 +1,95 @@
+.contactWrapper{
+    width: 90vw;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding-top: 10%;
+}
+.formContact{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.formTitleContact{
+    margin: 0;
+    font-family: var(--conFont);
+    font-size: var(--conSize);
+    font-weight: var(--conWeight);
+    color: var(--text);
+}
+.contactformContainer{
+    padding-left: 5%;
+    padding-top: 5%;
+}
+.submitContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.mapContact{
+    /* margin-top: 2%; */
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 90vw;
+}
+.walk{
+    margin-bottom: 2%;   
+}
+.walk h2{
+    font-family: var(--conFont);
+    font-size: var(--conSize);
+    font-weight: var(--conWeight);
+    color: var(--text);
+}
+.mapConitainer{
+    padding-left: 5%;
+}
+@media only screen and (max-width: 1070px){
+    .contactWrapper{
+        width: 80vw;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }   
+    .formContact{
+        width: 100%;
+    }
+    .contactformContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .contactformContainer input{
+        width: 80%;
+    }
+    .submitContainer{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+    
+    .mapContact{
+        /* margin-top: 2%; */
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+        width: 80vw;
+    }
+    .mapConitainer{
+        padding-left: 0%;
+        margin-bottom: 10%;
+    }
+}

@@ -1,0 +1,70 @@
+.aboutWrapper{
+    width: 80vw;
+    /* position: relative;
+    top: 0;
+    left: 0; */
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    
+}
+.banner{
+    /* background-color: aquamarine; */
+
+    width: 100vw;
+    height: 400px;
+    margin-top: 150px;
+}
+.aboutContainer{
+    width: 65%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+.aboutContainer h2{
+    font-family: var(--h2Font);
+    font-size: var(--h2Size);
+    font-weight: var(--h2Weight);
+    color: var(--text);
+}
+.aboutTitle h2{
+    font-size: var(--hero2Size);
+}
+.aboutContainer p{
+    font-family: var(--p1Font);
+    font-size: var(--p1Size);
+    font-weight: var(--p1Weight);
+    color: var(--text);
+}
+.aboutcontext{
+    margin-left: 5%;
+}
+.btnContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.aboutenqbtn{
+    width: 15rem;
+    margin: 3rem;
+    margin-top: 5rem;
+    
+}
+.abtBanner{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: contain;
+}
+
+@media only screen and (max-width: 1070px){
+    .aboutContainer{
+        width: 80%;
+        margin-top: 10%;
+    }
+    .banner{
+        margin-top: 100px;
+    }
+}
