@@ -44,6 +44,7 @@ export default function Contact(){
       const handleSubmit = async (e) => {
         e.preventDefault();
         try {
+          console.log('in server')
           // Replace '/send-email' with your server's endpoint
           // const response = await fetch('/send-email', {
             const response = await fetch('https://egserver.onrender.com', {
