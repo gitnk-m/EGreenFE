@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // API endpoint to handle sending emails
-app.post('https://api.render.com/deploy/srv-cj4ddpaip7vuasiaqd90?key=Wrdyaec4InM', async (req, res) => {
+app.post('https://api.render.com/deploy/srv-cj3reh59aq0e0q15af70?key=Go6cgu2Sw-U', async (req, res) => {
   try {
     const { name, company, phone, email, location, message } = req.body;
 
