@@ -22,7 +22,7 @@ export default function NavMob(){
     const handleScroll = () => {
         const position = window.scrollY;
         setScrollPosition(position);
-        console.log(position)
+        // console.log(position)
 
         if (position >= 100) {
             setpageScroll(true) 
@@ -80,7 +80,7 @@ export default function NavMob(){
     const checkproduct = () =>{
         const productDiv= productMenuDiv.current
         const { height } = productDiv.getBoundingClientRect();
-        console.log('in checkproduct')
+        // console.log('in checkproduct')
         if (height>0){
             openProductmenu()
         }
@@ -89,7 +89,7 @@ export default function NavMob(){
     const checkservice = () =>{
         const serviceDiv= serviceMenuDiv.current
         const { height } = serviceDiv.getBoundingClientRect();
-        console.log('in checkservice')
+        // console.log('in checkservice')
         if (height>0){
             openServicemenu()
         }
