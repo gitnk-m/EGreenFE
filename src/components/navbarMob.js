@@ -153,7 +153,7 @@ export default function NavMob(){
     return(
         <>
             <nav className={`mobNav ${pageScroll ? 'navColor' : ''}`}>
-                <Link to='/' className="mobLogo" ><img src={'../Images/logo-04.svg'} alt='Evergreen Logo'/></Link>
+                <Link to='/' className="mobLogo" ><img src={'../images/logo-04.svg'} alt='Evergreen Logo'/></Link>
                 
                 <div className='menuIcon'>
                     <img onClick={openMenu} src='../images/menuIcon.png' alt='Menu Icon'/>
