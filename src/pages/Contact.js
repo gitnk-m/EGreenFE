@@ -45,7 +45,8 @@ export default function Contact(){
         e.preventDefault();
         try {
           // Replace '/send-email' with your server's endpoint
-          const response = await fetch('/send-email', {
+          // const response = await fetch('/send-email', {
+            const response = await fetch('https://egserver.onrender.com', {
             method: 'POST',
             headers: {
               'Content-Type': 'application/json',
