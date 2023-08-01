@@ -11,7 +11,7 @@ app.use(cors());
 app.use(express.json());
 
 // API endpoint to handle sending emails
-app.post('https://egserver.onrender.com', async (req, res) => {
+app.post('/send-email', async (req, res) => {
   try {
     const { name, company, phone, email, location, message } = req.body;
 
