@@ -6,7 +6,7 @@ export default function Footer(){
         <div className='footer'>
             <div className="footerDetails">
                 <div className='footerLogo'>
-                    <img src={'../Images/logo-04.svg'} alt='Evergreen LOGO'/>
+                    <img src={'../images/logo-04.svg'} alt='Evergreen LOGO'/>
                     <div className='footerAddress'>
                         <div className="menuAddress">
                             <p>

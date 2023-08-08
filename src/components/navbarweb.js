@@ -112,7 +112,7 @@ const Navweb = () => {
     return(
         <>
             <nav className={`navbarweb ${pageScroll ? 'navColor' : ''}`}>
-                <Link to='/' className="Logo" ><img src={'../Images/logo-04.svg'} alt='Evergreen Logo'/></Link>
+                <Link to='/' className="Logo" ><img src={'../images/logo-04.svg'} alt='Evergreen Logo'/></Link>
                 <div className="menuItems">
                     <Link to='/' className={`MenuItem ${homeclass}`} id='homemenu'>Home</Link>
                     <Link onMouseEnter={submenuProdOn} onMouseLeave={submenuProdOff} className={`MenuItem ${productclass} service` } id='productmenu'>Products</Link>

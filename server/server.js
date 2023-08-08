@@ -22,14 +22,14 @@ app.post('/send-email', async (req, res) => {
       port: 587, // or 465 for SSL
       secure: false, // true for 465, false for other ports
       auth: {
-        user: 'justadummynk@gmail.com', // Replace with your email address
-        pass: 'qbbemphcddhijtkh', // Replace with your email password or app password for Gmail
+        user: 'akirayuva12@gmail.com', // Replace with your email address
+        pass: 'qsnbgszeiorbxiqe', // Replace with your email password or app password for Gmail
       },
     });
 
     // Email data
     const mailOptions = {
-      from: 'justadummynk@gmail.com', // Sender address
+      from: 'akirayuva12@gmail.com', // Sender address
       to: 'justadummynk@gmail.com', // Recipient address (from the form data)
       subject: `${name}--${company}--${location}`, // Subject of the email (from the form data)
       text: `Name: ${name}
